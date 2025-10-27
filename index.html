@@ -843,149 +843,156 @@
             border-radius: 5px;
         }
 
-        /* ========================================
-           MOBILE OPTIMIZATION - Non tocca desktop
-           ======================================== */
+        /* ==========================================
+           VERSIONE MOBILE SEMPLIFICATA
+           ========================================== */
         @media (max-width: 768px) {
-            /* Header Mobile */
+            /* NASCONDI immagini di sfondo su mobile */
+            .section-with-bg-image {
+                background-image: none !important;
+                background-color: #FFFFFF !important;
+                padding: 40px 20px !important;
+                min-height: auto !important;
+            }
+            
+            /* Riquadri diventano sezioni normali */
+            .text-overlay-box {
+                background: transparent !important;
+                box-shadow: none !important;
+                padding: 0 !important;
+                max-width: 100% !important;
+                backdrop-filter: none !important;
+            }
+            
+            /* Header */
             header {
-                padding: 10px 20px;
+                padding: 12px 20px;
             }
             
             .logo {
                 height: 40px;
             }
             
-            /* Hero Mobile */
+            /* Hero */
             .hero {
-                padding: 0 20px;
+                padding: 100px 20px 40px 20px !important;
             }
             
             .hero h1 {
-                font-size: 32px;
-                line-height: 1.2;
+                font-size: 32px !important;
+                line-height: 1.3 !important;
             }
             
             .hero .subtitle {
-                font-size: 18px;
+                font-size: 18px !important;
             }
             
             .hero .tagline {
-                font-size: 16px;
+                font-size: 16px !important;
             }
             
-            /* Buttons Mobile */
-            .cta-primary, .cta-secondary {
-                padding: 14px 30px;
-                font-size: 14px;
-                display: block;
-                width: 100%;
-                margin: 10px 0;
-            }
-            
-            /* Sections Mobile */
+            /* Sezioni */
             section {
                 padding: 40px 20px !important;
             }
             
             h2 {
-                font-size: 28px;
+                font-size: 28px !important;
             }
             
             h3 {
-                font-size: 22px;
+                font-size: 22px !important;
             }
             
-            /* Grid Mobile */
+            p {
+                font-size: 16px !important;
+                line-height: 1.6 !important;
+            }
+            
+            /* Grid a 1 colonna */
             .two-col,
             .features-grid,
-            .faculty-grid,
-            .footer-content {
+            .faculty-grid {
                 grid-template-columns: 1fr !important;
                 gap: 30px !important;
             }
             
-            /* Background Images Mobile */
-            .section-with-bg-image {
-                background-size: 70%;
-                background-position: center bottom;
-                padding: 30px 20px 220px 20px !important;
+            /* Cards */
+            .feature-card,
+            .faculty-card,
+            .vision-box,
+            .mission-box {
+                padding: 25px !important;
             }
             
-            .text-overlay-box {
-                padding: 25px;
-                max-width: 100%;
+            /* Buttons */
+            .cta-primary,
+            .cta-secondary {
+                display: block !important;
+                width: 100% !important;
+                padding: 14px 30px !important;
+                font-size: 14px !important;
+                margin: 10px 0 !important;
             }
             
-            .text-overlay-box h2 {
-                font-size: 24px;
-            }
-            
-            .text-overlay-box p {
-                font-size: 16px;
-            }
-            
-            /* Carousel Mobile */
-            .carousel-container {
-                overflow-x: auto;
-                scroll-snap-type: x mandatory;
-                -webkit-overflow-scrolling: touch;
-            }
-            
-            .carousel-container::-webkit-scrollbar {
-                display: none;
+            /* Carousel */
+            .carousel-track {
+                gap: 15px !important;
             }
             
             .carousel-slide {
-                min-width: 90%;
-                scroll-snap-align: center;
+                min-width: 100% !important;
             }
             
             .module-card {
-                padding: 20px;
+                padding: 20px !important;
             }
             
             .module-card h4 {
-                font-size: 20px;
+                font-size: 20px !important;
             }
             
             .carousel-btn {
-                padding: 10px 20px;
-                font-size: 14px;
+                padding: 10px 20px !important;
+                font-size: 14px !important;
             }
             
-            /* Stats Mobile */
+            /* Stats */
             .stats {
-                grid-template-columns: repeat(2, 1fr) !important;
+                grid-template-columns: 1fr !important;
+                gap: 20px !important;
             }
             
-            /* Faculty Cards Mobile */
-            .faculty-card {
-                padding: 25px;
+            /* Footer */
+            .footer-content {
+                grid-template-columns: 1fr !important;
+                text-align: center !important;
+                gap: 30px !important;
             }
             
-            /* Footer Mobile */
-            footer {
-                text-align: center;
+            /* Liste */
+            ul {
+                padding-left: 20px !important;
+            }
+            
+            li {
+                font-size: 16px !important;
+                line-height: 1.6 !important;
             }
         }
         
         /* Extra Small Mobile */
         @media (max-width: 400px) {
             .hero h1 {
-                font-size: 28px;
+                font-size: 28px !important;
             }
             
-            .hero .subtitle {
-                font-size: 16px;
+            h2 {
+                font-size: 24px !important;
             }
             
-            .text-overlay-box {
-                padding: 20px;
-            }
-            
-            .section-with-bg-image {
-                padding: 20px 15px 180px 15px !important;
+            section {
+                padding: 30px 15px !important;
             }
         }
 
