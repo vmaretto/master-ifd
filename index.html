@@ -13,6 +13,7 @@
         }
 
         body {
+            overflow-x: hidden;
             font-family: 'Lato', Arial, sans-serif;
             font-weight: 400;
             color: #333333;
@@ -46,7 +47,7 @@
         .hero {
             background: #FFFFFF;
             text-align: center;
-            max-width: 1200px;
+            max-width: 100%;
             margin: 0 auto;
         }
 
@@ -111,7 +112,7 @@
         section {
             background: #FFFFFF;
             padding: 70px 60px;
-            max-width: 1200px;
+            max-width: 100%;
             margin: 0 auto;
         }
 
@@ -639,7 +640,7 @@
             overflow: visible !important;
             position: relative;
             padding: 70px 60px;
-            max-width: 1200px;
+            max-width: 100%;
             margin: 0 auto;
         }
         
@@ -723,7 +724,7 @@
             }
             
             section {
-                padding: 40px 20px !important;
+                padding: 30px 15px !important;
             }
             
             /* Background Images Mobile */
@@ -798,6 +799,30 @@
             .hero .subtitle {
                 font-size: 16px !important;
             }
+        
+        /* Carousel Mobile Optimization */
+        @media (max-width: 768px) {
+            .carousel-container {
+                overflow-x: auto;
+                scroll-snap-type: x mandatory;
+                -webkit-overflow-scrolling: touch;
+                scrollbar-width: none;
+            }
+            
+            .carousel-container::-webkit-scrollbar {
+                display: none;
+            }
+            
+            .carousel-slide {
+                min-width: 90vw;
+                scroll-snap-align: center;
+            }
+            
+            .module-card {
+                width: 100%;
+            }
+        }
+
             
             .text-overlay-box {
                 padding: 20px !important;
@@ -984,7 +1009,7 @@
         </div>
     </section>
 
-    <section style="background: #FFFFFF; padding: 60px 60px; max-width: 1200px; margin: 0 auto;">
+    <section style="background: #FFFFFF; padding: 60px 60px; max-width: 100%; margin: 0 auto;">
         <h3 style="font-size: 28px; margin-bottom: 20px; color: #000000;">La Piattaforma di Ricerca</h3>
         <p style="font-size: 18px; line-height: 1.8; color: #333333; margin-bottom: 30px;">Questo Master nasce dall'esperienza della <strong>Piattaforma di Ricerca Italian Food Design</strong>, punto di riferimento nazionale per la ricerca agroalimentare e l'innovazione. Tutti i progetti hanno alla base la ricerca scientifica, la creatività, la collaborazione tra saperi diversi.</p>
 
@@ -1003,7 +1028,7 @@
 
     <!-- Vision & Mission -->
     <section class="vision-mission gray-bg">
-        <div style="max-width: 1200px; margin: 0 auto; padding: 0 60px;">
+        <div style="max-width: 100%; margin: 0 auto; padding: 0 60px;">
             <h2>Vision e Mission</h2>
             <div class="separator"></div>
             <div class="two-col">
@@ -1038,7 +1063,7 @@
 
         <!-- Programma con Caroselli -->
     <section id="programma" class="gray-bg">
-        <div style="max-width: 1200px; margin: 0 auto; padding: 0 60px;">
+        <div style="max-width: 100%; margin: 0 auto; padding: 0 60px;">
             <h2>Il Programma</h2>
             <div class="separator"></div>
             <p style="text-align: center; font-size: 20px; margin-bottom: 50px;">76 CFU distribuiti in 6 aree formative</p>
@@ -1426,7 +1451,7 @@
 
     <!-- Faculty -->
     <section class="gray-bg">
-        <div style="max-width: 1200px; margin: 0 auto; padding: 0 60px;">
+        <div style="max-width: 100%; margin: 0 auto; padding: 0 60px;">
             <h2>Faculty di Eccellenza</h2>
             <div class="separator"></div>
             
